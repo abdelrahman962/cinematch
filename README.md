@@ -68,30 +68,31 @@ Download: https://grouplens.org/datasets/movielens/100k/
 
 ## Project structure
 
+```
 cinematch/
-│
 ├── data/
-│   ├── u.data          ← 100,000 ratings
-│   ├── u.item          ← movie info and genres
-│   └── u.user          ← user demographic info
+│   ├── u.data                  # 100,000 ratings
+│   ├── u.item                  # movie info and genres
+│   └── u.user                  # user demographic info
 │
 ├── src/
-│   ├── content_based.py    ← Engine 1 — trains and saves similarity matrix
-│   ├── collaborative.py    ← Engine 2 — trains and saves SVD model
-│   └── clustering.py       ← Engine 3 — trains and saves KMeans model
+│   ├── content_based.py        # Engine 1 — similarity matrix training
+│   ├── collaborative.py        # Engine 2 — SVD model training
+│   └── clustering.py           # Engine 3 — KMeans model training
 │
 ├── models/
-│   ├── similarity_matrix.pkl
-│   ├── movies.pkl
-│   ├── collab_model.pkl
-│   ├── rmse_score.pkl
-│   ├── kmeans_model.pkl
-│   ├── silhouette_score.pkl
-│   └── clustered_movies.pkl
+│   ├── similarity_matrix.pkl   # Content-based model
+│   ├── movies.pkl              # Movie data cache
+│   ├── collab_model.pkl        # Collaborative filtering model
+│   ├── rmse_score.pkl          # Model evaluation score
+│   ├── kmeans_model.pkl        # Clustering model
+│   ├── silhouette_score.pkl    # Clustering evaluation
+│   └── clustered_movies.pkl    # Movie cluster assignments
 │
-├── app.py              ← Streamlit web application
-├── requirements.txt    ← all dependencies
+├── app.py                      # Streamlit web application
+├── requirements.txt            # Python dependencies
 └── README.md
+```
 
 
 ---
