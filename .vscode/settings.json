@@ -1,0 +1,8 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.defaultInterpreterPath": "C:/Users/hp/AppData/Local/Programs/Python/Python310/python.exe",
+    "python.terminal.activateEnvironment": false,
+    "terminal.integrated.env.windows": {
+        "PATH": "C:/Users/hp/AppData/Local/Programs/Python/Python310;C:/Users/hp/AppData/Local/Programs/Python/Python310/Scripts;${env:PATH}"
+    }
+}
